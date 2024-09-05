@@ -39,7 +39,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mavenl -s settings.xml test'
+                sh 'mvn -s settings.xml test'
             }
         }
 
